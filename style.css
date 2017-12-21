@@ -1,0 +1,32 @@
+header {
+  background-color: #B1CF72
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #B1CF72;
+}
+
+.purrpl {
+  font-family: 'Indie Flower', cursive;
+  color: #5E405F;
+}
+
+.develo {
+  font-family: 'Source Code Pro', monospace;
+  color: #6B6B6B;
+}
+.imgLogo {
+  margin: auto;
+}
+
+div.main {
+  background-color: #4F364C;
+}
+/* COLOR PALETTE
+#4F364C,
+#5E405F,
+#6B6B6B,
+#8F9E6F,
+#B1CF72,
+*/
