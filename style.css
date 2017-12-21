@@ -23,6 +23,16 @@ body {
 div.main {
   background-color: #4F364C;
 }
+
+.author {
+  background-color: #6B6B6B;
+}
+
+main {
+  max-width: 1200px;
+  width: auto;
+  margin: auto;
+}
 /* COLOR PALETTE
 #4F364C,
 #5E405F,
