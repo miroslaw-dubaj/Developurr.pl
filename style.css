@@ -16,6 +16,12 @@ body {
   font-family: 'Source Code Pro', monospace;
   color: #6B6B6B;
 }
+
+.avatarName {
+  font-family: 'Source Code Pro', monospace;
+  color: #6B6B6B;
+}
+
 .imgLogo {
   margin: auto;
 }
@@ -25,13 +31,24 @@ div.main {
 }
 
 .author {
-  background-color: #6B6B6B;
+  border: 4px solid #6B6B6B;
+  background-color: #8F9E6F;
 }
 
 main {
   max-width: 1200px;
   width: auto;
   margin: auto;
+}
+
+.date {
+  letter-spacing: 0.2rem;
+  color: #6B6B6B;
+  text-transform: uppercase;
+}
+
+h2.articleHead {
+  font-family: 'Source Code Pro', monospace;
 }
 /* COLOR PALETTE
 #4F364C,
