@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>develoPURR.PL - od klakiera do developera</title>
+    <!-- Native CSS -->
+    <link rel="stylesheet" href="style.css">
     <!-- Fonts Google -->
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat|Source+Code+Pro" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <!-- Native CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
   </head>
-  <body class="body">
+  <body>
 
     <header class="jumbotron-fluid mt-0 mb-0">
       <div class="container">
@@ -25,14 +25,14 @@
         </div>
       </div>
     </header>
-    <nav class="navbar navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-light sticky-top border border-right-0 border-left-0">
       <div class="container">
          <a class="navbar-brand" href="#">developurr.pl</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
         <li class="nav-item active">
             <a href="kontakt.html" class="menu nav-link">HOME</a>
         </li>
@@ -54,26 +54,14 @@
               <h5 class="date"><time datetime="2017-12-22 15:00">22 grudnia 2017 - godzina 15:00</time></h5>
               <h2 class="articleHead"> Git & GitHub - Zanim zaczniesz naukę!</h2>
               <blockquote class="blockquote pl-2 border border-right-0 border-top-0 border-bottom-0">"It is easy to shoot your foot off with git, but also easy to revert to a previous foot and merge it with your current leg." — Jack William Bell</blockquote>
-              <div class="row">
-                <div class="col">
-                  <p>W większości ofert pracy dla Junior Developerów pojawia się tajemnicze stwierdzenie - "Wymagana znajomość kontroli wersji Git". Aha, ok, kolejna technologia do wpisania na listę "do wyuczenia".
-                  Mało osób informuje o tym, że nauka Git'a a następnie GitHub'a jest kwestią pierwszej potrzeby przy nauce programowania. Ja dowiedziałem się o tym po dobrych dwóch miesiącach nauki JavaScript'u. Dwuch miesiącach przez które mógłbym prowadzić na bierząco repozytoria mojego rozwoju. Repozytoria? Już wyjaśniam.</p>
-                </div>
-                <div class="col-sm-4 order-first align-self-center">
-                    <img class="imgLogo rounded ml-2 mb-2 img-fluid float-right" src="git-logo.png" alt="Git logo">
-                </div>
-                </div>
+              <p>W większości ofert pracy dla Junior Developerów pojawia się tajemnicze stwierdzenie - "Wymagana znajomość kontroli wersji Git". Aha, ok, kolejna technologia do wpisania na listę "do wyuczenia".
+              Mało osób informuje o tym, że nauka Git'a a następnie GitHub'a jest kwestią pierwszej potrzeby przy nauce programowania. Ja dowiedziałem się o tym po dobrych dwóch miesiącach nauki JavaScript'u. Dwuch miesiącach przez które mógłbym prowadzić na bierząco repozytoria mojego rozwoju. Repozytoria? Już wyjaśniam.</p>
+              <img class="imgLogo rounded ml-2 mb-2 img-fluid float-right" src="git-logo.png" alt="Git logo">
               <p>W telegraficznym skrócie Git to narzędzie które pozwala pracować nad projektem bez obaw o utratę danych. Wybieramy folder który Git monitoruje pod kontem zmian. W wybanym przez nas momencie możemy "przesłać" je tworząc swego rodzaju "save'a". Możemy również cofnąć się do poprzednich wersji a także tworzyć alternatywny lub dodatkowe funkcje bez modyfikowania oryginału, a gdy jesteśmy zadowoleni z rezulatów polączyć wszystko razem.</p>
               <p>Dla przykładu: Podczas nauki JavaScript'u zabrałem się za przerabianie algorytmów sortowania. Napisałem pierwszą dziąłającą wersję - w tym momencie "Commit'owałem" (zapisałem) ją do repozytorium (bazy projektu w Git). Postanowiłem jednak pracować dalej nad optymalizacją skryptu i wykonałem jeszcze dwa commit'y a następnie aby dodać możliwość input'u danych od urzytkownika stworzyłem nową gałąź (branch) na której pracowałem dalej nad skryptem. Gdybym jednak stwierdził, że potrzebuję wrócić do pierwotnej wersji w każdej chwili byłoby to możliwe i to na kilka sposobów!</p>
+              <img class="imgLogo rounded mr-2 mb-2 img-fluid float-left" src="github-logo.png" alt="GitHub logo">
               <p>Ok, git. A o co chodzi w takim razie z GitHub'em?</p>
-              <div class="row">
-                <div class="col flex-last">
-                  <p>GitHub to open source'owy projekt działający jako serwer dla naszych repozytoriów. Sam w sobie stanowi olbrzymią skarbnicę open source'owych projektów, gdzie nie tylko możemy pobrać ich najnowsze wersje ale także sprawdzić krok po kroku jak się rozwijały jak również dożucić do nich 3 grosze od siebie!</p>
-                </div>
-                <div class="col-sm-4 order-first float-right align-self-center">
-                    <img class="imgLogo rounded ml-2 mb-2 img-fluid float-right" src="github-logo.png" alt="Git logo">
-                </div>
-                </div>
+              <p>GitHub to open source'owy projekt działający jako serwer dla naszych repozytoriów. Sam w sobie stanowi olbrzymią skarbnicę open source'owych projektów, gdzie nie tylko możemy pobrać ich najnowsze wersje ale także sprawdzić krok po kroku jak się rozwijały jak również dożucić do nich 3 grosze od siebie!</p>
               <h4>Do dzieła!</h4>
               <p>By poznać podstawy Gita i pracy z GitHubem polecam darmowy tutorial na <a href="https://www.youtube.com/watch?v=3RjQznt-8kE&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR" target="blank"> YouTube od The Net Ninja</a>. A w dziale narzędzia znajdziecie linki do Git'a i desktop'owego GitHuba.</p>
             </article>
