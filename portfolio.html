@@ -3,106 +3,112 @@
   <head>
     <meta charset="utf-8">
     <title>develoPURR.PL - od klakiera do developera</title>
-    <!-- Native CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome script -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
     <!-- Fonts Google -->
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat|Source+Code+Pro" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- Native CSS
+    <link rel="stylesheet" href="style.css"> -->
   </head>
   <body>
-
-    <header class="jumbotron-fluid mt-0 mb-0">
+    <header>
+    <div class="container-fluid">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md">
-
+          <div class="col ">
+            News - info
           </div>
-          <div class="col-md-3">
-            <img class="imgLogo img-fluid" src="develoPURR.png" alt="develoPURR logo">
-            <h1 class='develo text-center'>develo<span class='purrpl'>purr.pl<span></h1>
+          <div class="col-4-sm">
+            <ul class="list-inline my-auto mr-2">
+              <li class="list-inline-item"><a href="https://www.facebook.com/developurrpl-1712772188781612/"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.linkedin.com/in/miroslaw-dubaj-30393999/"><i class="fab fa-linkedin-in"></i></a></li>
+              <li class="list-inline-item"><a href="https://github.com/miroslaw-dubaj"><i class="fab fa-github"></i></a></li>
+              <li class="list-inline-item"><a href="https://stackoverflow.com/users/story/9135951"><i class="fab fa-stack-overflow"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.freecodecamp.org/miroslaw-dubaj"><i class="fab fa-free-code-camp"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-4-sm float-right">
+                <form class="form-inline my-2 ml-auto d-none d-sm-block">
+                  <input class="form-control form-control-sm mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success btn-sm my-2 my-sm-0" type="submit">Search</button>
+                </form>
           </div>
         </div>
       </div>
-    </header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-light sticky-top border border-right-0 border-left-0">
+    </div>
+    <div class="jumbotron py-2 mb-0">
       <div class="container">
-         <a class="navbar-brand" href="#">developurr.pl</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-            <a href="kontakt.html" class="menu nav-link">HOME</a>
+        <hr class="mb-6">
+        <h1 class="display-4 develo">develo<span class="purrpl">PURR.PL</span></h1>
+        <p class="lead">Od Klakiera do Developera - Blog & Portfolio</p>
+        <hr class="mt-6">
+      </div>
+    </div>
+    </header>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-secondary sticky-top">
+      <div class="container">
+    <a class="navbar-brand develo" href="#">develo<span class="purrpl">PURR.PL</span></a>
+    <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Technologie
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"><i class="fab fa-git"></i><span class="ml-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span></a>
+            <a class="dropdown-item" href="#"><i class="fab fa-html5"></i><span class="ml-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span></a>
+            <a class="dropdown-item" href="#"><i class="fab fa-css3-alt"></i><span class="ml-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span></a>
+            <a class="dropdown-item" href="#"><i class="fab fa-js"></i><span class="ml-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span></a>
+            <a class="dropdown-item" href="#"><i class="fab fa-wordpress"></i><span class="ml-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span></a>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex justify-content-center align-self-center">
+            <i class="fab fa-less align-self-center mr-1"></i>
+            <i class="fab fa-sass align-self-center mr-1"></i>
+            <i class="fab fa-angular align-self-center mr-1"></i>
+            <i class="fab fa-react align-self-center mr-1"></i>
+            <i class="fab fa-node-js align-self-center mr-1"></i>
+            <i class="fab fa-npm align-self-center mr-1"></i>
+            <i class="fab fa-joomla align-self-center mr-1"></i>
+          </div>
+          </div>
         </li>
         <li class="nav-item">
-
-            <a href="kontakt.html" class="menu nav-link">NARZĘDZIA</a>
-        </li>
-        <li class="nav-item">
-            <a href="kontakt.html" class="menu nav-link">GITHUB</a>
+          <a class="nav-link disabled" href="#">Disabled</a>
         </li>
       </ul>
     </div>
-      </div>
-    </nav>
-    <main class="container text-white border border-top-0">
-        <div class="main  pt-2 row">
-          <div class="col">
-            <article class="post">
-              <h5 class="date"><time datetime="2017-12-22 15:00">22 grudnia 2017 - godzina 15:00</time></h5>
-              <h2 class="articleHead"> Git & GitHub - Zanim zaczniesz naukę!</h2>
-              <blockquote class="blockquote pl-2 border border-right-0 border-top-0 border-bottom-0">"It is easy to shoot your foot off with git, but also easy to revert to a previous foot and merge it with your current leg." — Jack William Bell</blockquote>
-              <p>W większości ofert pracy dla Junior Developerów pojawia się tajemnicze stwierdzenie - "Wymagana znajomość kontroli wersji Git". Aha, ok, kolejna technologia do wpisania na listę "do wyuczenia".
-              Mało osób informuje o tym, że nauka Git'a a następnie GitHub'a jest kwestią pierwszej potrzeby przy nauce programowania. Ja dowiedziałem się o tym po dobrych dwóch miesiącach nauki JavaScript'u. Dwuch miesiącach przez które mógłbym prowadzić na bierząco repozytoria mojego rozwoju. Repozytoria? Już wyjaśniam.</p>
-              <img class="imgLogo rounded ml-2 mb-2 img-fluid float-right" src="git-logo.png" alt="Git logo">
-              <p>W telegraficznym skrócie Git to narzędzie które pozwala pracować nad projektem bez obaw o utratę danych. Wybieramy folder który Git monitoruje pod kontem zmian. W wybanym przez nas momencie możemy "przesłać" je tworząc swego rodzaju "save'a". Możemy również cofnąć się do poprzednich wersji a także tworzyć alternatywny lub dodatkowe funkcje bez modyfikowania oryginału, a gdy jesteśmy zadowoleni z rezulatów polączyć wszystko razem.</p>
-              <p>Dla przykładu: Podczas nauki JavaScript'u zabrałem się za przerabianie algorytmów sortowania. Napisałem pierwszą dziąłającą wersję - w tym momencie "Commit'owałem" (zapisałem) ją do repozytorium (bazy projektu w Git). Postanowiłem jednak pracować dalej nad optymalizacją skryptu i wykonałem jeszcze dwa commit'y a następnie aby dodać możliwość input'u danych od urzytkownika stworzyłem nową gałąź (branch) na której pracowałem dalej nad skryptem. Gdybym jednak stwierdził, że potrzebuję wrócić do pierwotnej wersji w każdej chwili byłoby to możliwe i to na kilka sposobów!</p>
-              <img class="imgLogo rounded mr-2 mb-2 img-fluid float-left" src="github-logo.png" alt="GitHub logo">
-              <p>Ok, git. A o co chodzi w takim razie z GitHub'em?</p>
-              <p>GitHub to open source'owy projekt działający jako serwer dla naszych repozytoriów. Sam w sobie stanowi olbrzymią skarbnicę open source'owych projektów, gdzie nie tylko możemy pobrać ich najnowsze wersje ale także sprawdzić krok po kroku jak się rozwijały jak również dożucić do nich 3 grosze od siebie!</p>
-              <h4>Do dzieła!</h4>
-              <p>By poznać podstawy Gita i pracy z GitHubem polecam darmowy tutorial na <a href="https://www.youtube.com/watch?v=3RjQznt-8kE&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR" target="blank"> YouTube od The Net Ninja</a>. A w dziale narzędzia znajdziecie linki do Git'a i desktop'owego GitHuba.</p>
-            </article>
-            <hr>
+  </div>
+  </nav>
+  </div>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <blockquote class="blockquote">
+              <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
           </div>
-          <div class="sidebar ml-2 mr-2 rounded col-md-3 px-4 py-4">
-            <div class="widget">
-              <div class="widget widget-avatar rounded mb-2 mt-2">
-                <img class="imgLogo rounded-circle pr-2 pl-2 pt-2 mb-4 img-fluid" src="kot.jpg" alt="Kot Developer Avatar">
-                <h4 class='avatarName text-center'>Kot Developer</h4>
-                <p>
-                <ul>
-                  <li>HTML5 - 11100</li>
-                  <li>CSS3 - 11100</li>
-                  <li>JS - 11000</li>
-                </ul>
-              </div>
-              <div class="widget widget-avatar rounded mb-2 mt-2">
-                <img class="imgLogo rounded-circle mb-4 img-fluid" src="kot.jpg" alt="Kot Developer Avatar">
-                <h4 class='avatarName text-center'>Kot Developer</h4>
-                <p>
-                <ul>
-                  <li>HTML5 - 11100</li>
-                  <li>CSS3 - 11100</li>
-                  <li>JS - 11000</li>
-                </ul>
-              </div>
-              <div class="widget widget-avatar rounded mb-2 mt-2">
-                <img class="imgLogo rounded-circle mb-4 img-fluid" src="kot.jpg" alt="Kot Developer Avatar">
-                <h4 class='avatarName text-center'>Kot Developer</h4>
-                <p>
-                <ul>
-                  <li>HTML5 - 11100</li>
-                  <li>CSS3 - 11100</li>
-                  <li>JS - 11000</li>
-                </ul>
-              </div>
-            </div>
+          <div class="col-lg-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-lg-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
+      </div>
     </main>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

@@ -1,5 +1,9 @@
 header {
-  background-color: #B1CF72
+  background-color: #B1CF72;
+}
+
+div.jumbotron {
+  background-color: #B1CF72;
 }
 
 body.body {
