@@ -132,56 +132,177 @@
 
             <article class="col border rounded py-2">
               <div class="row">
-                <div class="col-sm-1">
-                  <img class="img-thumbnail" src="math.jpg" alt="Math coding exercise indicator">
-                </div>
                 <div class="col-md">
-                  <h1 class="mt-1">[WZ] Zmienne</h1>
+                  <h1 class="mt-1"><i class="fab fa-js-square"></i> Zmienne</h1>
                   <hr class="my-1">
-                  <h5>Zadanie 1</h5>
-                  <p class="mt-2 mt-sm-0">Wypisz "It Works"</p>
-                  <blockquote class="blockquote">
-<pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;
+                    <h4>Zadanie 1</h4>
+                      <p class="mt-2 mt-sm-0">Wypisz "It Works"</p>
+                      <h5>Rozwiązanie</h5>
+                      <p id="sol-zad-1">Tu pojawi się rozwiązanie</p>
+                      <button type="button" onclick="solZad1()" class="btn btn-light">Wyświetl</button>
+                      <blockquote class="blockquote">
+<pre class="pre-scrollable"><code>
+  function solZad1() {
+    document.getElementById("sol-zad-1").innerHTML = "It Works!";
+    console.log('It works!');
+  }</code></pre>
+                      </blockquote>
+                    <h4>Zadanie 2</h4>
+                      <p class="mt-2 mt-sm-0">Oblicz sumę dwóch zmiennych</p>
+                      Podaj pierwszą liczbę: <input class="form-control" type="number" id="l_1"> </br>
+                      Podaj drugą liczbę: <input class="form-control" type="number" id="l_2">
+                      <h5>Rozwiązanie</h5>
+                        <p id="sol-zad-2">Tu pojawi się rozwiązanie</p>
+                      <button type="button" onclick="solZad2()" class="btn btn-light">Wyświetl</button>
+                      <blockquote class="blockquote">
+<pre class="pre-scrollable"><code>function solZad2() {
+    let x = document.getElementById("l_1");
+    let y = document.getElementById("l_2");
+    let xliczba = Number(x.value);
+    let yliczba = Number(y.value);
+  let suma = xliczba + yliczba;
+  document.getElementById("sol-zad-2").innerHTML = suma;
+}</code></pre>
+                      </blockquote>
+                    <h4>Zadanie 3</h4>
+                        <p class="mt-2 mt-sm-0">Wypisz resztę z dzielenia</p>
+                        Podaj pierwszą liczbę: <input class="form-control" type="number" id="l_3"> </br>
+                        Podaj drugą liczbę: <input class="form-control" type="number" id="l_4">
+                      <h5>Rozwiązanie</h5>
+                      <p id="sol-zad-3">Tu pojawi się rozwiązanie</p>
+                      <button type="button" onclick="solZad3()" class="btn btn-light">Wyświetl</button>
+                      <blockquote class="blockquote">
+<pre class="pre-scrollable"><code>function solZad3() {
+  let x = document.getElementById("l_3");
+  let y = document.getElementById("l_4");
+  let xliczba = Number(x.value);
+  let yliczba = Number(y.value);
+  let modulo = xliczba % yliczba;
+  document.getElementById("sol-zad-3").innerHTML = modulo;
+}</code></pre>
+                      </blockquote>
+                    <h4>Zadanie 4</h4>
+                      <p class="mt-2 mt-sm-0">Wczytuje liczbę całkowitą – rok, a następnie sprawdza czy jest to rok przestępny i wyświetla stosowną informację. (Rok przestępny: dzieli się przez 4 i nie dzieli się przez 100, lub dzieli się przez 400).</p>
+                      Podaj rok do sprawdzenia: <input class="form-control" type="number" id="l_year">
+                      <h5>Rozwiązanie</h5>
+                      <p id="sol-zad-4">Tu pojawi się rozwiązanie</p>
+                      <button type="button" onclick="solZad4()" class="btn btn-light">Wyświetl</button>
+                      <blockquote class="blockquote">
+<pre class="pre-scrollable"><code>function solZad4() {
+  let year = document.getElementById("l_year");
+  let przest = "";
+  let war1 = ((year % 4 === 0) && (year % 100 !== 0));
+  let war2 = ((year % 400) === 0);
+  if ( war1 || war2 ) {
+    przest = "Rok przestępny";
+  } else  {
+    przest = "Rok nieprzestępny";
+  }
+document.getElementById("sol-zad-4").innerHTML = przest;
+}</code></pre>
+                      </blockquote>
+                    <h4>Zadanie 5 | <i class="fas fa-exclamation"></i></h4>
+                      <p class="mt-2 mt-sm-0">Dla podanej dwucyfrowej liczby wypisać osobno każdą jej cyfrę</p>
+                        Podaj dwucyfrową liczbę: <input class="form-control" type="number" id="l_5">
+                      <h5>Rozwiązanie</h5>
+                          <p id="sol-zad-5">Tu pojawi się rozwiązanie</p>
+                      <button type="button" onclick="solZad5()" class="btn btn-light">Wyświetl</button>
+                      <blockquote class="blockquote">
+<pre class="pre-scrollable"><code>function solZad5() {
+  let num = document.getElementById("l_5");
+  let number = Number(num.value);
+  let last = number % 10;
+  let first = (number - last) / 10;
+  document.getElementById("sol-zad-5").innerHTML = ("Pierwsza cyfra to " + first + " a druga to " + last + ".");
+}</code></pre>
+                      </blockquote>
+                    <h4>Zadanie 6 | <i class="fas fa-exclamation"></i> <i class="fas fa-asterisk"></i> <i class="fas fa-calculator"></i></h4>
+                      <p class="mt-2 mt-sm-0">Do pewnego wydarzenia pozostało N milisekund, przekonwertować to do H:M:S (taki timer) 3723000 -> 1h 2m 3s</p>
+                      Podaj ile milisekund pozostało: <input class="form-control" type="number" id="l_6">
+                      <h5>Rozwiązanie</h5>
+                      <p id="sol-zad-6">Tu pojawi się rozwiązanie</p>
+                      <button type="button" onclick="solZad6()" class="btn btn-light">Wyświetl</button>
+                      <blockquote class="blockquote">
+<pre class="pre-scrollable"><code>function solZad6() {
+
+  let msFromForm = document.getElementById("l_5");
+  let ms = Number(msFromForm.value);
+  let H;
+  let M;
+  let S;
+
+  H = Math.floor(ms / 3600000);
+  M = (ms - (H * 3600000));
+  M = Math.floor(M / 60000);
+  S = (ms - ((H *3600000) + (M * 60000)));
+  S = Math.floor(S / 1000);
+
+document.getElementById("sol-zad-4").innerHTML = ("Zostało" + H + "godzin," + M + "minut i " + S + "sekund." );
+}</code></pre>
+                      </blockquote>
+                    <h4>Zadanie 7 | <i class="fas fa-exclamation"></i></h4>
+                      <p class="mt-2 mt-sm-0">Podane są zmienne a i b. Zamienić wartości miejscami (tzw. swap).</p>
+                      <input class="form-control" onchange="document.getElementById("sol-zad-7").innerHTML = ("Dla X podano: " + x + " a dla Y: " + y)" type="number" id="l_7">
+                      <input class="form-control" onchange="document.getElementById("sol-zad-7").innerHTML = ("Dla X podano: " + x + " a dla Y: " + y)" type="number" id="l_8">
+                      <h5>Rozwiązanie</h5>
+                      <p id="sol-zad-7">Tu pojawi się rozwiązanie</p>
+                      <button type="button" class="btn btn-light">Wyświetl</button>
+                      <blockquote class="blockquote">
+<pre class="pre-scrollable"><code>&lt;p&gt;Sample text here...&lt;/p&gt;
 &lt;p&gt;And another line of sample text here...&lt;/p&gt;
-                  </code></pre>
-                  </blockquote>
+                      </code></pre>
+                      </blockquote>
                 </div>
               </div>
             </article>
     </div>
-    <div class="row mt-1">
-                      <article class="col border rounded py-2">
-                        <div class="row">
-                          <div class="col-sm-4">
-                            <img class="img-thumbnail" src="3.png" alt="Santa promo">
-                          </div>
-                          <div class="col-md-8">
-                            <h5 class="mt-1"><time class="my-auto">14 Listopada 2017</time></h5>
-                            <hr class="my-1">
-                            <h1>Mikołajki z Bloom</h1>
-                        <p>HoHoHo !!! Mikołajkowe promocje w BLOOM <span class="_5mfr _47e3"><img class="img" height="16" role="presentation" src="https://static.xx.fbcdn.net/images/emoji.php/v9/f88/1/16/1f385.png" width="16" alt=""><span class="_7oe">🎅</span></span><span class="_5mfr _47e3"><img class="img" height="16" role="presentation" src="https://static.xx.fbcdn.net/images/emoji.php/v9/f88/1/16/1f385.png" width="16" alt=""><span class="_7oe">🎅</span></span><span class="_5mfr _47e3"><img class="img" height="16" role="presentation" src="https://static.xx.fbcdn.net/images/emoji.php/v9/f88/1/16/1f385.png" width="16" alt=""><span class="_7oe">🎅</span></span></p><p> Spraw sobie lub bliskiej Ci osobie wyjątkowy prezent <span class="_5mfr _47e3"><img class="img" height="16" role="presentation" src="https://static.xx.fbcdn.net/images/emoji.php/v9/f84/1/16/1f381.png" width="16" alt=""><span class="_7oe">🎁</span></span><br> Tylko do 6 grudnia wszystkie biustonosze tańsze o 40%, pozostałe produkty również w atrakcyjnych cenach <span class="_5mfr _47e3"><img class="img" height="16" role="presentation" src="https://static.xx.fbcdn.net/images/emoji.php/v9/f57/1/16/1f609.png" width="16" alt=""><span class="_7oe">😉</span></span></p><p> Mikołaj czeka na Was w BLOOM <span class="_5mfr _47e3"><img class="img" height="16" role="presentation" src="https://static.xx.fbcdn.net/images/emoji.php/v9/f6c/1/16/2764.png" width="16" alt=""><span class="_7oe">❤️</span></span></p>
-                            </div>
-                        </div>
-                      </article>
-  </div>
+    <div class="row">
 
-  <div class="row mt-1">
-                    <article class="col border rounded py-2">
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <img class="img-thumbnail" src="3.png" alt="Santa promo">
-                        </div>
-                        <div class="col-md-8">
-                          <h5 class="mt-1"><time class="my-auto">14 Listopada 2017</time></h5>
-                          <hr class="my-1">
-                          <h1>Mikołajki z Bloom</h1>
-                      <p>HoHoHo !!! Mikołajkowe promocje w BLOOM <span class="_5mfr _47e3"><img class="img" height="16" role="presentation" src="https://static.xx.fbcdn.net/images/emoji.php/v9/f88/1/16/1f385.png" width="16" alt=""><span class="_7oe">🎅</span></span><span class="_5mfr _47e3"><img class="img" height="16" role="presentation" src="https://static.xx.fbcdn.net/images/emoji.php/v9/f88/1/16/1f385.png" width="16" alt=""><span class="_7oe">🎅</span></span><span class="_5mfr _47e3"><img class="img" height="16" role="presentation" src="https://static.xx.fbcdn.net/images/emoji.php/v9/f88/1/16/1f385.png" width="16" alt=""><span class="_7oe">🎅</span></span></p><p> Spraw sobie lub bliskiej Ci osobie wyjątkowy prezent <span class="_5mfr _47e3"><img class="img" height="16" role="presentation" src="https://static.xx.fbcdn.net/images/emoji.php/v9/f84/1/16/1f381.png" width="16" alt=""><span class="_7oe">🎁</span></span><br> Tylko do 6 grudnia wszystkie biustonosze tańsze o 40%, pozostałe produkty również w atrakcyjnych cenach <span class="_5mfr _47e3"><img class="img" height="16" role="presentation" src="https://static.xx.fbcdn.net/images/emoji.php/v9/f57/1/16/1f609.png" width="16" alt=""><span class="_7oe">😉</span></span></p><p> Mikołaj czeka na Was w BLOOM <span class="_5mfr _47e3"><img class="img" height="16" role="presentation" src="https://static.xx.fbcdn.net/images/emoji.php/v9/f6c/1/16/2764.png" width="16" alt=""><span class="_7oe">❤️</span></span></p>
-                          </div>
-                      </div>
-                    </article>
+
+
+
+    <article class="col border rounded py-2">
+      <div class="row">
+        <div class="col-md">
+          <h1 class="mt-1"><i class="fab fa-js-square"></i> Instrukcje warunkowe</h1>
+          <hr class="my-1">
+          <h4>Zadanie 1</h4>
+          <p class="mt-2 mt-sm-0">Wypisz "It Works"</p>
+          <h5>Rozwiązanie</h5>
+          <p id="sol-zad-1">Tu pojawi się rozwiązanie</p>
+          <button type="button" class="btn btn-light">Wyświetl</button>
+          <blockquote class="blockquote">
+<pre class="pre-scrollable"><code>&lt;p&gt;Sample text here...&lt;/p&gt;
+&lt;p&gt;And another line of sample text here...&lt;/p&gt;
+          </code></pre>
+          </blockquote>
+        </div>
+      </div>
+    </article>
 </div>
 
+<div class="row">
 
+
+<article class="col border rounded py-2">
+  <div class="row">
+    <div class="col-md">
+      <h1 class="mt-1"><i class="fab fa-js-square"></i> Pętle</h1>
+      <hr class="my-1">
+      <h4>Zadanie 1</h4>
+      <p class="mt-2 mt-sm-0">Wypisz "It Works"</p>
+      <h5>Rozwiązanie</h5>
+      <p id="sol-zad-1">Tu pojawi się rozwiązanie</p>
+      <button type="button" class="btn btn-light">Wyświetl</button>
+      <blockquote class="blockquote">
+<pre class="pre-scrollable"><code>&lt;p&gt;Sample text here...&lt;/p&gt;
+&lt;p&gt;And another line of sample text here...&lt;/p&gt;
+      </code></pre>
+      </blockquote>
+    </div>
+  </div>
+</article>
+</div>
 
 
 
@@ -228,8 +349,8 @@
             </aside>
         </div>
       </main>
-
-
+    <!-- Exercise Solutions JavaScript file -->
+    <script src="solutions.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
